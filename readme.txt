@@ -1,5 +1,5 @@
 === Jabbernotifikation ===
-Contributors: Missi, Arno, Jeremy
+Contributors: Missi
 Tags: comments, jabber
 Requires at least: 2.0.2
 Tested up to: 2.9
