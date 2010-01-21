@@ -1,5 +1,6 @@
 === Jabbernotifikation ===
 Contributors: Missi
+Donate link: http://www.entartete-kunst.com/jabberbenachrichtigung-bei-neuen-kommentaren/
 Tags: comments, jabber
 Requires at least: 2.0.2
 Tested up to: 2.9
