@@ -33,4 +33,3 @@ http://www.entartete-kunst.com/jabberbenachrichtigung-bei-neuen-kommentaren/
 = 3.14 =
 * Initial Alpha
 
-`<?php code(); // goes in backticks ?>`
