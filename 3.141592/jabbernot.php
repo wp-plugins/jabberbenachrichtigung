@@ -82,7 +82,7 @@ GPL Lizenz FTW!
 ?>
 <div class="wrap">
         <h2><?php _e("Jabberbenachrichtigung: Optionen", 'jabbernotification')?></h2>
-        <p><?php _e("Bitte trage die gew&uuml;nschten Jabber-Account-Daten sowie die Jabber-ID, an die die Benachrichtigung gesendet werden soll ein. Beachte, dass du zun&auml;chst den Account manuell registrieren musst.", 'jabbernotification') ?> (<?php _e("Hilfe?", 'jabbernotification')?> =&gt; <a href="http://www.entartete-kunst.com/yet-another-jabber-faq/">Jabber- FAQ</a>!)</p>
+        <p><?php _e("Bitte trage die gew&uuml;nschten Jabber-Account-Daten sowie die Jabber-ID, an welche die Benachrichtigung gesendet werden soll ein. Beachte, dass du zun&auml;chst den Account manuell registrieren musst.", 'jabbernotification')?> (<?php _e("Hilfe?", 'jabbernotification')?> =&gt; <a href="http://www.entartete-kunst.com/yet-another-jabber-faq/">Jabber- FAQ</a>!)</p>
         <form name="form1" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>?page=jabbernot.php&updated=true">
                 <input type="hidden" name="stage" value="process" />
                 <fieldset class="options">
@@ -93,7 +93,7 @@ GPL Lizenz FTW!
                                         <td>
                                                 <input name="jabbernot_server" type="text" id="jabbernot_server" value="<?php echo $jabbernot_server; ?>" size="20" /><br />
                                                 <?php _e("Gib hier die Adresse des Jabberservers ein. Eine Liste freier Jabberserver findest du", 'jabbernotification')?>
-                                                <a href="http://www.jabber.org/user/publicservers.shtml"><?php _e("hier.", 'jabbernotification')?></a></td>
+                                                <a href="http://www.jabberes.org/servers/servers_by_times_online.html"><?php _e("hier.", 'jabbernotification')?></a></td>
                                 </tr>
                                 <tr valign="top">
                                         <th scope="row">Port</th>
