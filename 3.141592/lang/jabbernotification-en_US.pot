@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/jabberbenachrichtigung\n"
 "POT-Creation-Date: 2010-01-22 16:00+0000\n"
-"PO-Revision-Date: 2010-01-22 17:03+0100\n"
+"PO-Revision-Date: 2010-01-22 17:33+0100\n"
 "Last-Translator: Missi <missi@arcor.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "MIME-Version: 1.0\n"
@@ -51,7 +51,7 @@ msgstr "Username"
 
 #: 3.141592/jabbernot.php:109
 msgid "Hier den Benutzernamen eintragen"
-msgstr "Insert here your username"
+msgstr "Insert your username  here"
 
 #: 3.141592/jabbernot.php:112
 msgid "Passwort"
@@ -59,7 +59,7 @@ msgstr "Password"
 
 #: 3.141592/jabbernot.php:115
 msgid "Hier das Passwort eintragen."
-msgstr "Insert here the password."
+msgstr "Insert the password here."
 
 #: 3.141592/jabbernot.php:121
 msgid "Hier die gew&uuml;nschte Resource eintragen. (Beispielsweise <em>Wordpress</em> oder<em> Notifier</em>)."
