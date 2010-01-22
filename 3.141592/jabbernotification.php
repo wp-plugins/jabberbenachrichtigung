@@ -30,7 +30,7 @@ GPL Lizenz FTW!
 // Localization
 	$locale = get_locale();
 	if ( !empty( $locale ) ) {
-	$mofile = ABSPATH . 'wp-content/plugins/jabbernotification/lang/jabbernotification-'.$locale.'.mo';
+	$mofile = ABSPATH . 'wp-content/plugins/jabberbenachrichtigung/lang/jabbernotification-'.$locale.'.mo';
 //	echo $mofile;
 	//exit;
 	load_textdomain('jabbernotification', $mofile);
