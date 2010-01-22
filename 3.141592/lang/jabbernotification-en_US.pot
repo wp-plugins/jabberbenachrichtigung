@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/jabberbenachrichtigung\n"
-"POT-Creation-Date: 2010-01-22 15:46+0000\n"
-"PO-Revision-Date: 2010-01-22 16:49+0100\n"
+"POT-Creation-Date: 2010-01-22 16:00+0000\n"
+"PO-Revision-Date: 2010-01-22 17:03+0100\n"
 "Last-Translator: Missi <missi@arcor.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "MIME-Version: 1.0\n"
@@ -22,8 +22,7 @@ msgid "Jabberbenachrichtigung: Optionen"
 msgstr "Jabbernotification: Options"
 
 #: 3.141592/jabbernot.php:85
-#, fuzzy
-msgid "Bitte trage die gew&uuml;nschten Jabber-Account-Daten sowie die Jabber-ID, an die die Benachrichtigung gesendet werden soll ein. Beachte, dass du zun&auml;chst den Account manuell registrieren musst."
+msgid "Bitte trage die gew&uuml;nschten Jabber-Account-Daten sowie die Jabber-ID, an welche die Benachrichtigung gesendet werden soll ein. Beachte, dass du zun&auml;chst den Account manuell registrieren musst."
 msgstr "Insert here the desired Jabber account settings, including your Jabber ID where the notification should be sent to. Please note, that this account must exist and won't be created for you."
 
 #: 3.141592/jabbernot.php:85
