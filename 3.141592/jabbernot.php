@@ -135,8 +135,8 @@ GPL Lizenz FTW!
                         </p>
         </form>
 <hr>
-                <p style="margin-top: 30px; text-align: center; font-size: .85em;">Proudly presented by <a href="http://www.entartete-kunst.com/">Pinky</a> and the  <a href="http://burnachurch.com/">Brain</a>. <!--They're Pinky and the Brain, Brain, Brain, Brain, Brain, Brain, Brain, Brain, NARF!-->user-friendly adapted by <a href="http://jeremy.lonien.de/">Jeremy</a>.<br />
-                Distributed under the terms of the <a href="http://www.fsf.org/licensing/licenses/gpl.html"> GPL -(Don't ask for support or features, do it on your own (but let me know!)). License</a> </p>
+                <p style="margin-top: 30px; text-align: center; font-size: .85em;">Proudly presented by <a href="http://www.entartete-kunst.com/">Pinky</a> and the  <a href="http://burnachurch.com/">Brain</a>. <!--They're Pinky and the Brain, Brain, Brain, Brain, Brain, Brain, Brain, Brain, NARF!-->User-friendly adapted by <a href="http://jeremy.lonien.de/">Jeremy</a>.<br />
+                Distributed under the terms of the <a href="http://www.fsf.org/licensing/licenses/gpl.html"> GPL -(Don't ask for support or features, do it on your own (but let me know!)) License.</a> </p>
 </div>
 <?php }  // End jabbernot_options_subpanel
 
@@ -147,19 +147,60 @@ function jabberbenachrichtigung($comment_id = 0)
         global $wpdb;
         if ($comment_id != 0)
         {
-                require_once("class.jabber.php");
+//$query_res->comment_author, $query_res->post_title, $query_res->comment_content, $siteurl/wp-admin/edit.php?p=$query_res->comment_post_ID&c=1, $siteurl/wp-admin/post.php?action=editcomment&comment=$comment_id, $siteurl/wp-admin/post.php?action=deletecomment&p=$query_res->comment_post_ID&comment=$comment_id, $siteurl/wp-admin/post.php?action=unapprovecomment&p=$query_res->comment_post_ID&comment=$comment_id,
 
+                require_once("class.jabber.php");
+A new comment on the post
                 $query = "SELECT $wpdb->posts.post_author, $wpdb->posts.post_title, $wpdb->comments.user_id, $wpdb->comments.comment_post_ID, $wpdb->comments.comment_author, $wpdb->comments.comment_content FROM $wpdb->comments INNER JOIN $wpdb->posts ON $wpdb->comments.comment_post_ID = $wpdb->posts.ID WHERE $wpdb->comments.comment_ID='$comment_id' AND comment_approved != 'spam'";
 
 
-                $query_res = $wpdb->get_row($query);
+                $comment = $wpdb->get_row($query);
 
-                if (! $query_res->comment_post_ID)
+                if (! $comment->comment_post_ID)
                 {
                         return;
                 }
 
-                $siteurl = get_option('siteurl');
+
+		switch ($comment->comment_type)
+		{
+		        case 'trackback':
+		                $notify_message  = sprintf( __('A new trackback on the post #%1$s "%2$s" is waiting for your approval'), $post->ID, $post->post_title ) . "\r\n";
+		                $notify_message .= get_permalink($comment->comment_post_ID) . "\r\n\r\n";
+		                $notify_message .= sprintf( __('Website : %1$s (IP: %2$s , %3$s)'), $comment->comment_author, $comment->comment_author_IP, $comment_author_domain ) . "\r\n";
+		                $notify_message .= sprintf( __('URL    : %s'), $comment->comment_author_url ) . "\r\n";
+		                $notify_message .= __('Trackback excerpt: ') . "\r\n" . $comment->comment_content . "\r\n\r\n";
+		                break;
+		        case 'pingback':
+		                $notify_message  = sprintf( __('A new pingback on the post #%1$s "%2$s" is waiting for your approval'), $post->ID, $post->post_title ) . "\r\n";
+		                $notify_message .= get_permalink($comment->comment_post_ID) . "\r\n\r\n";
+		                $notify_message .= sprintf( __('Website : %1$s (IP: %2$s , %3$s)'), $comment->comment_author, $comment->comment_author_IP, $comment_author_domain ) . "\r\n";
+		                $notify_message .= sprintf( __('URL    : %s'), $comment->comment_author_url ) . "\r\n";
+		                $notify_message .= __('Pingback excerpt: ') . "\r\n" . $comment->comment_content . "\r\n\r\n";
+		                break;
+		        default: //Comments
+		                $notify_message  = sprintf( __('A new comment on the post #%1$s "%2$s" is waiting for your approval'), $post->ID, $post->post_title ) . "\r\n";
+		                $notify_message .= get_permalink($comment->comment_post_ID) . "\r\n\r\n";
+		                $notify_message .= sprintf( __('Author : %1$s (IP: %2$s , %3$s)'), $comment->comment_author, $comment->comment_author_IP, $comment_author_domain ) . "\r\n";
+		                $notify_message .= sprintf( __('E-mail : %s'), $comment->comment_author_email ) . "\r\n";
+		                $notify_message .= sprintf( __('URL    : %s'), $comment->comment_author_url ) . "\r\n";
+		                $notify_message .= sprintf( __('Whois  : http://ws.arin.net/cgi-bin/whois.pl?queryinput=%s'), $comment->comment_author_IP ) . "\r\n";
+		                $notify_message .= __('Comment: ') . "\r\n" . $comment->comment_content . "\r\n\r\n";
+		                break;
+		}
+
+		$notify_message .= sprintf( __('Approve it: %s'),  admin_url("comment.php?action=approve&c=$comment_id") ) . "\r\n";
+		if ( EMPTY_TRASH_DAYS )
+		        $notify_message .= sprintf( __('Trash it: %s'), admin_url("comment.php?action=trash&c=$comment_id") ) . "\r\n";
+		else
+		        $notify_message .= sprintf( __('Delete it: %s'), admin_url("comment.php?action=delete&c=$comment_id") ) . "\r\n";
+		$notify_message .= sprintf( __('Spam it: %s'), admin_url("comment.php?action=spam&c=$comment_id") ) . "\r\n";
+
+		$notify_message .= sprintf( _n('Currently %s comment is waiting for approval. Please visit the moderation panel:',
+		        'Currently %s comments are waiting for approval. Please visit the moderation panel:', $comments_waiting), number_format_i18n($comments_waiting) ) . "\r\n";
+		$notify_message .= admin_url("edit-comments.php?comment_status=moderated") . "\r\n";
+
+
                 if ( $query_res->post_author != $query_res->user_id)
                 {
 
@@ -174,7 +215,7 @@ function jabberbenachrichtigung($comment_id = 0)
                         $JABBER->SendAuth() /*or die("Couldn't authenticate!")*/;
                         $content = array();
                         $content['body'] =
-                                htmlspecialchars("Neuer Kommentar: $query_res->comment_author zu \"$query_res->post_title\" :\n\"$query_res->comment_content\"\n\n Alle Kommentare:\n$siteurl/wp-admin/edit.php?p=" . $query_res->comment_post_ID . "&c=1\n\nKommentar editieren:\n$siteurl/wp-admin/post.php?action=editcomment&comment=" . $comment_id . "\n\nKommentar loeschen:\n$siteurl/wp-admin/post.php?action=deletecomment&p=" . $query_res->comment_post_ID . "&comment=".$comment_id."\n\nModerieren:\n$siteurl/wp-admin/post.php?action=unapprovecomment&p=" . $query_res->comment_post_ID . "&comment=".$comment_id."\n\n");
+                                htmlspecialchars($notify_message);
                         $JABBER->SendMessage(get_option('jabbernot_destination'), "normal", NULL, $content);
                         $JABBER->Disconnect();
                 }
@@ -182,6 +223,6 @@ function jabberbenachrichtigung($comment_id = 0)
 }
 
 /* Actions & Filters */
-add_action('comment_post', 'jabberbenachrichtigung');
+add_action('comment_post', 'jabbernotification');
 add_action('admin_menu', 'jabbernot_admin_menu');
 ?>
