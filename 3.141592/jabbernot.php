@@ -80,8 +80,8 @@ GPL Lizenz FTW!
          $jabbernot_destination = get_option('jabbernot_destination');
 ?>
 <div class="wrap">
-        <h2><?php _e("Jabberbenachrichtigung: Optionen", 'jabbernotification')?></h2>
-        <p><?php _e("Bitte trage die gew&uuml;nschten Jabber-Account-Daten sowie die Jabber-ID, an welche die Benachrichtigung gesendet werden soll ein. Beachte, dass du zun&auml;chst den Account manuell registrieren musst.", 'jabbernotification')?> (<?php _e("Hilfe?", 'jabbernotification')?> =&gt; <a href="http://www.entartete-kunst.com/yet-another-jabber-faq/">Jabber- FAQ (deutsch)</a>| <a href="http://archive.jabber.org/userguide/">Jabber- FAQ (english)</a> !)</p>
+        <h2><?php _e("Jabbernotification: Options", 'jabbernotification')?></h2>
+        <p><?php _e("Insert here the desired Jabber account settings, including your Jabber ID where the notification should be sent to. Please note, that this account must exist and won't be created for you.", 'jabbernotification')?> (<?php _e("Help?", 'jabbernotification')?> =&gt; <a href="http://www.entartete-kunst.com/yet-another-jabber-faq/">Jabber- FAQ (deutsch)</a>| <a href="http://archive.jabber.org/userguide/">Jabber- FAQ (english)</a> !)</p>
         <form name="form1" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>?page=jabbernot.php&updated=true">
                 <input type="hidden" name="stage" value="process" />
                 <fieldset class="options">
@@ -91,41 +91,41 @@ GPL Lizenz FTW!
                                         <th scope="row"> <?php _e("Server", 'jabbernotification') ?> </th>
                                         <td>
                                                 <input name="jabbernot_server" type="text" id="jabbernot_server" value="<?php echo $jabbernot_server; ?>" size="20" /><br />
-                                                <?php _e("Gib hier die Adresse des Jabberservers ein. Eine Liste freier Jabberserver findest du", 'jabbernotification')?>
-                                                <a href="http://www.jabberes.org/servers/servers_by_times_online.html"><?php _e("hier.", 'jabbernotification')?></a></td>
+                                                <?php _e("Insert here the address of your Jabber server. You'll find a list of freely available Jabber server ", 'jabbernotification')?>
+                                                <a href="http://www.jabberes.org/servers/servers_by_times_online.html"><?php _e("here.", 'jabbernotification')?></a></td>
                                 </tr>
                                 <tr valign="top">
                                         <th scope="row">Port</th>
                                         <td>
                                                 <input name="jabbernot_port" type="text" id="jabbernot_port" value="<?php echo $jabbernot_port; ?>" maxlength=5 size="10" /><br />
-                                                <?php _e("Port, der benutzt werden soll. Standard:", 'jabbernotification') ?>
+                                                <?php _e("Port to be used. Default:", 'jabbernotification') ?>
                                                 <code>5222</code></td>
                           </tr>
                                 <tr valign="top">
-                                        <th scope="row"<?php _e("Benutzername", 'jabbernotification') ?></th>
+                                        <th scope="row"<?php _e("Username", 'jabbernotification') ?></th>
                                 <td>
                                                 <input name="jabbernot_username" type="text" id="jabbernot_username" value="<?php echo $jabbernot_username; ?>" size="20" ><br />
-                                                <?php _e("Hier den Benutzernamen eintragen", 'jabbernotification') ?></td>
+                                                <?php _e("Insert your username here", 'jabbernotification') ?></td>
                                 </tr>
                                 <tr valign="top">
-                                        <th scope="row"><?php _e("Passwort", 'jabbernotification') ?></th>
+                                        <th scope="row"><?php _e("Password", 'jabbernotification') ?></th>
                                         <td>
                                                 <input name="jabbernot_password" id="jabbernot_password" type="password" value="<?php echo $jabbernot_password; ?>" size="20" ><br />
-                                                <?php _e("Hier das Passwort eintragen.", 'jabbernotification') ?></td>
+                                                <?php _e("Insert your password here", 'jabbernotification') ?></td>
                                 </tr>
                                 <tr valign="top">
                                         <th scope="row">Ressource</th>
                                         <td>
                                                 <input name="jabbernot_resource" id="jabbernot_resource" type="text" value="<?php echo $jabbernot_resource; ?>" size="20" ><br />
-                                                <?php _e("Hier die gew&uuml;nschte Resource eintragen. (Beispielsweise <em>Wordpress</em> oder<em> Notifier</em>).", 'jabbernotification') ?></td>
+                                                <?php _e("Insert the desired resource here. (For example <em>Wordpress</em> or <em>Notifier</em>). ", 'jabbernotification') ?></td>
                                 </tr>
                         </table>
-                        <legend><?php _e("Zieldaten", 'jabbernotification') ?></legend>
-                        <p><?php _e("Trage hier die Jabber-ID ein, an die die Benachrichtigung gesendet werden soll.", 'jabbernotification') ?></p>
+                        <legend><?php _e("Recipient", 'jabbernotification') ?></legend>
+                        <p><?php _e("Insert here the Jabber ID of the recipient that will receive the notification. ", 'jabbernotification') ?></p>
                                 <table width="100%" cellspacing="2" cellpadding="5" class="editform">
                                 <tr valign="top">
                                         <th scope="row">Jabber-ID</th>
-                                <td><input name="jabbernot_destination" type="text" id="jabbernot_destination" value="<?php echo $jabbernot_destination; ?>" size="30" /><br /> <?php _e("Beispiel:<em>meine-jabber-id@jabberserver.com", 'jabbernotification') ?></em></td>
+                                <td><input name="jabbernot_destination" type="text" id="jabbernot_destination" value="<?php echo $jabbernot_destination; ?>" size="30" /><br /> <?php _e("Eg.:<em>my-jabber-id@jabberserver.com", 'jabbernotification') ?></em></td>
                                 </tr>
                         </table>
           </fieldset>
@@ -140,7 +140,8 @@ GPL Lizenz FTW!
 <?php }  // End jabbernot_options_subpanel
 
 
-// ok, genug vom mausschubser- backend, lets go... (end of frontend, backend starts here)
+// end of frontend, backend starts here
+
 function jabbernotification($comment_id = 0)
 {
         global $wpdb;
