@@ -1,16 +1,16 @@
-# Translation of the WordPress plugin jabbernotification  by pinky&brain.
+# Translation of the WordPress plugin   by .
 # Copyright (C) 2010
 # This file is distributed under the same license as the  package.
 #
-# pinky_brain@dont-trust.us, 2010.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
 msgid ""
 msgstr ""
 "Project-Id-Version: Jabbernotification\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/jabberbenachrichtigung\n"
 "POT-Creation-Date: 2010-01-22 20:18+0000\n"
-"PO-Revision-Date: 2010-01-22 21:32+0100\n"
-"Last-Translator: Pinky <pinky_brain@dont-trust.us>\n"
-"Language-Team: Pinky& Brain <pinky_brain@dont-trust.us>\n"
+"PO-Revision-Date: 2010-01-22 21:37+0100\n"
+"Last-Translator: Missi <missi@arcor.de>\n"
+"Language-Team: Pinky& Brain <missi@entartete-kunst.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -163,6 +163,6 @@ msgstr "Als Spam markieren: %s"
 #, php-format
 msgid "Currently %s comment is waiting for approval. Please visit the moderation panel:"
 msgid_plural "Currently %s comments are waiting for approval. Please visit the moderation panel:"
-msgstr[0] "Gegenw&auml;rtig gibt es %s Kommentar zur Freischaltung. Besuche bitte dein Dashboard: "
-msgstr[1] "Gegenw&auml;rtig gibt es %s Kommentare zur Freischaltung. Besuche bitte dein Dashboard: "
+msgstr[0] "Gegenwärtig gibt es %s Kommentar zur Freischaltung. Besuche bitte dein Dashboard: "
+msgstr[1] "Gegenwärtig gibt es %s Kommentare zur Freischaltung. Besuche bitte dein Dashboard: "
 
