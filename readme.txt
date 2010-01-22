@@ -3,7 +3,7 @@ Contributors: Missi
 Tags: comments, jabber, xmpp
 Requires at least: 2.0.2
 Tested up to: 2.9
-Stable tag: 3.141592
+Stable tag: 0.99-RC1
 Donate link: http://foo.entartete-kunst.com/
 Notify the Admin about new comments via jabber.
 
@@ -37,17 +37,17 @@ http://www.entartete-kunst.com/jabberbenachrichtigung-bei-neuen-kommentaren/
 
 == Changelog ==
 
-= 3.141592 =
+= 0.99-RC1 =
 
 * I18N
 * fix some minor bugs
 * waste a lot of time and coffee
 * somebody was calculating pi on the server 
 
-= 3.1415 =
+= 0.2 =
 
 * Initial- Public
 
-= 3.14 =
+= 0.1 =
 * Initial Alpha
 
