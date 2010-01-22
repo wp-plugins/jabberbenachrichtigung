@@ -136,7 +136,7 @@ GPL Lizenz FTW!
         </form>
 <hr>
                 <p style="margin-top: 30px; text-align: center; font-size: .85em;">Proudly presented by <a href="http://www.entartete-kunst.com/">Pinky</a> and the  <a href="http://burnachurch.com/">Brain</a>. <!--They're Pinky and the Brain, Brain, Brain, Brain, Brain, Brain, Brain, Brain, NARF!-->user-friendly adapted by <a href="http://jeremy.lonien.de/">Jeremy</a>.<br />
-                Distributed under the terms of the <a href="http://www.fsf.org/licensing/licenses/gpl.html"> GPL</a> Don't ask for support or features, do it on your own (but let me know!). License :o)</p>
+                Distributed under the terms of the <a href="http://www.fsf.org/licensing/licenses/gpl.html"> GPL -(Don't ask for support or features, do it on your own (but let me know!)). License</a> </p>
 </div>
 <?php }  // End jabbernot_options_subpanel
 
