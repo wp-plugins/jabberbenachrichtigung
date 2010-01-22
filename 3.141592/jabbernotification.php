@@ -198,8 +198,10 @@ function jabbernotification($comment_id = 0)
 		        	$notify_message .= sprintf( __('Delete it: %s', 'jabbernotification'), admin_url("comment.php?action=delete&c=$comment_id") ) . "\r\n";
 			
 			$notify_message .= sprintf( __('Spam it: %s', 'jabbernotification'), admin_url("comment.php?action=spam&c=$comment_id") ) . "\r\n";
+			//$notify_message .= sprintf( _n('Currently %s comment is waiting for approval. Please visit the moderation panel:',
+			  //      'Currently %s comments are waiting for approval. Please visit the moderation panel:', $comments_waiting), number_format_i18n($comments_waiting) ) . "\r\n";
 			$notify_message .= sprintf( _n('Currently %s comment is waiting for approval. Please visit the moderation panel:',
-			        'Currently %s comments are waiting for approval. Please visit the moderation panel:', $comments_waiting), number_format_i18n($comments_waiting) ) . "\r\n";
+'Currently %s comments are waiting for approval. Please visit the moderation panel:', $comments_waiting, 'jabbernotification'), number_format_i18n($comments_waiting) ) . "\r\n";
 			$notify_message .= admin_url("edit-comments.php?comment_status=moderated") . "\r\n";
 
 
@@ -225,3 +227,4 @@ function jabbernotification($comment_id = 0)
 add_action('comment_post', 'jabbernotification');
 add_action('admin_menu', 'jabbernot_admin_menu');
 ?>
+
