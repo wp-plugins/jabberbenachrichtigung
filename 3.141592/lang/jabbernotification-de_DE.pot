@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Jabbernotification\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/jabberbenachrichtigung\n"
 "POT-Creation-Date: 2010-01-22 18:29+0000\n"
-"PO-Revision-Date: 2010-01-22 20:00+0100\n"
+"PO-Revision-Date: 2010-01-22 20:22+0100\n"
 "Last-Translator: Missi <missi@arcor.de>\n"
 "Language-Team: pinky&brain <missi@entartete-kunst.com>\n"
 "MIME-Version: 1.0\n"
@@ -24,7 +24,7 @@ msgstr "Jabberbenachrichtigung: Optionen"
 
 #: 3.141592/jabbernot.php:84
 msgid "Insert here the desired Jabber account settings, including your Jabber ID where the notification should be sent to. Please note, that this account must exist and won't be created for you."
-msgstr "Bitte trage die gew&uuml;nschten Jabber-Account-Daten sowie die Jabber-ID, an welche die Benachrichtigung gesendet werden soll ein. Beachte, dass du zun&auml;chst den Account manuell registrieren musst."
+msgstr "Bitte trage die gew&uuml;nschten Jabber-Account-Daten sowie die Jabber-ID ein, an welche die Benachrichtigung gesendet werden soll ein. Beachte, dass du zun&auml;chst den Account manuell registrieren musst."
 
 #: 3.141592/jabbernot.php:84
 msgid "Help?"
@@ -40,7 +40,7 @@ msgstr "Gib hier die Adresse des Jabberservers ein. Eine Liste freier Jabberserv
 
 #: 3.141592/jabbernot.php:95
 msgid "here."
-msgstr "hier"
+msgstr "hier."
 
 #: 3.141592/jabbernot.php:101
 msgid "Port to be used. Default:"
@@ -68,7 +68,7 @@ msgstr "Hier die gew&uuml;nschte Resource eintragen. (Beispielsweise <em>Wordpre
 
 #: 3.141592/jabbernot.php:123
 msgid "Recipient"
-msgstr "Empf&auuml;nger"
+msgstr "Empf&auml;nger"
 
 #: 3.141592/jabbernot.php:124
 msgid "Insert here the Jabber ID of the recipient that will receive the notification. "
