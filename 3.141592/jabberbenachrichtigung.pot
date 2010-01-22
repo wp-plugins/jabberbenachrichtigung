@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  \n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/jabberbenachrichtigung\n"
-"POT-Creation-Date: 2010-01-22 12:19+0000\n"
+"POT-Creation-Date: 2010-01-22 12:39+0000\n"
 "PO-Revision-Date: 2010-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,6 +16,57 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: jabbernot.php:124
+#: 3.141592/jabbernot.php:82
+msgid "Server"
+msgstr ""
+
+#: 3.141592/jabbernot.php:92
+msgid "Port, der benutzt werden soll. Standard:"
+msgstr ""
+
+#: 3.141592/jabbernot.php:96
+msgid "Benutzername"
+msgstr ""
+
+#: 3.141592/jabbernot.php:99
+msgid "Hier den Benutzernamen eintragen"
+msgstr ""
+
+#: 3.141592/jabbernot.php:102
+msgid "Passwort"
+msgstr ""
+
+#: 3.141592/jabbernot.php:105
+msgid "Hier das Passwort eintragen."
+msgstr ""
+
+#: 3.141592/jabbernot.php:111
+msgid ""
+"Hier die gew&uuml;nschte Resource eintragen. (Beispielsweise <em>Wordpress</"
+"em> oder<em> Notifier</em>)."
+msgstr ""
+
+#: 3.141592/jabbernot.php:114
+msgid "Zieldaten"
+msgstr ""
+
+#: 3.141592/jabbernot.php:115
+msgid ""
+"Trage hier die Jabber-ID ein, an die die Benachrichtigung gesendet werden "
+"soll."
+msgstr ""
+
+#: 3.141592/jabbernot.php:119
+msgid "Beispiel:<em>meine-jabber-id@jabberserver.com"
+msgstr ""
+
+#: 3.141592/jabbernot.php:124
 msgid "Update Options"
+msgstr ""
+
+#: 3.141592/jabbernot.php:85
+msgid ""
+"Gib hier die Adresse des Jabberservers ein. Eine Liste freier Jabberserver "
+"findest du\n"
+"                                                <a href="
 msgstr ""
