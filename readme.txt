@@ -37,10 +37,10 @@ http://www.entartete-kunst.com/jabberbenachrichtigung-bei-neuen-kommentaren/
 
 == Changelog ==
 
-= 3.1415 =
+= 0.2 =
 
 * Initial- Public
 
-= 3.14 =
+= 0.1 =
 * Initial Alpha
 

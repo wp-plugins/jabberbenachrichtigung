@@ -4,7 +4,7 @@
 Plugin Name: Jabberbenachrichtigung
 Plugin URI: http://www.entartete-kunst.com/jabberbenachrichtigung-bei-neuen-kommentaren/
 Description: Admin- Benachrichtigung ueber neue Kommentare per Jabber. <a href="options-general.php?page=jabbernot.php">Einstellungen</a>
-Version: 3.1415
+Version: 0.2
 Author: Missi
 Author URI: http://www.entartete-kunst.com/
 
