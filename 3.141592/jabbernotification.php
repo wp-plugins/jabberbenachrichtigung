@@ -81,7 +81,7 @@ GPL Lizenz FTW!
 ?>
 <div class="wrap">
         <h2><?php _e("Jabbernotification: Options", 'jabbernotification')?></h2>
-        <p><?php _e("Insert here the desired Jabber account settings, including your Jabber ID where the notification should be sent to. Please note, that this account must exist and won't be created for you.", 'jabbernotification')?> (<?php _e("Help?", 'jabbernotification')?> =&gt; <a href="http://www.entartete-kunst.com/yet-another-jabber-faq/">Jabber- FAQ (deutsch)</a>| <a href="http://archive.jabber.org/userguide/">Jabber- FAQ (english)</a> !)</p>
+        <p><?php _e("Insert here the desired Jabber account settings, including your Jabber ID where the notification should be sent to. Please note, that this account must exist and won't be created for you.", 'jabbernotification')?> (<?php _e("Help?", 'jabbernotification')?> =&gt; <a href="http://www.entartete-kunst.com/yet-another-jabber-faq/">Jabber- FAQ (deutsch)</a>| <a href="http://archive.jabber.org/userguide/">Jabber- FAQ (english)</a>)</p>
         <form name="form1" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>?page=jabbernot.php&updated=true">
                 <input type="hidden" name="stage" value="process" />
                 <fieldset class="options">
@@ -125,7 +125,7 @@ GPL Lizenz FTW!
                                 <table width="100%" cellspacing="2" cellpadding="5" class="editform">
                                 <tr valign="top">
                                         <th scope="row">Jabber-ID</th>
-                                <td><input name="jabbernot_destination" type="text" id="jabbernot_destination" value="<?php echo $jabbernot_destination; ?>" size="30" /><br /> <?php _e("Eg.:<em>my-jabber-id@jabberserver.com", 'jabbernotification'</em>) ?></td>
+                                <td><input name="jabbernot_destination" type="text" id="jabbernot_destination" value="<?php echo $jabbernot_destination; ?>" size="30" /><br /> <?php _e("Eg.:<em>my-jabber-id@jabberserver.com</em>", 'jabbernotification') ?></td>
                                 </tr>
                         </table>
           </fieldset>
