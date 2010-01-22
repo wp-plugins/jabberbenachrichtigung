@@ -32,7 +32,7 @@ GPL Lizenz FTW!
 // Move along.
          function jabbernot_admin_menu(){        // Adding option panel
          if (function_exists('add_options_page')) {
-         add_options_page('options-general.php', 'Jabberbenachrichtigung', 10, basename(__FILE__), 'jabbernot_options_subpanel');
+         add_options_page('options-general.php', 'Jabbernotification', 10, basename(__FILE__), 'jabbernot_options_subpanel');
          }
 }
           function jabbernot_options_subpanel(){         // Content of the option panel **Still under heavy construction**
@@ -72,7 +72,7 @@ GPL Lizenz FTW!
 ?>
 <div class="wrap">
         <h2>Jabberbenachrichtigung: Optionen</h2>
-        <p>Bitte trage die gew&uuml;nschten Jabber-Account-Daten sowie die Jabber-ID, an die die Benachrichtigung gesendet werden soll ein. Beachte, dass du zun&auml;chst den Account manuell registrieren musst. (Hilfe? =&gt; <a href="http://www.entartete-kunst.com/yet-another-jabber-faq/">Jabber- FAQ</a>!)</p>
+        <p><?php _e("Bitte trage die gew&uuml;nschten Jabber-Account-Daten sowie die Jabber-ID, an die die Benachrichtigung gesendet werden soll ein. Beachte, dass du zun&auml;chst den Account manuell registrieren musst. (Hilfe? =&gt; <a href="http://www.entartete-kunst.com/yet-another-jabber-faq/">Jabber- FAQ</a>!)") ?></p>
         <form name="form1" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>?page=jabbernot.php&updated=true">
                 <input type="hidden" name="stage" value="process" />
                 <fieldset class="options">
