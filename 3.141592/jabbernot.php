@@ -135,13 +135,13 @@ GPL Lizenz FTW!
                         </p>
         </form>
 <hr>
-                <p style="margin-top: 30px; text-align: center; font-size: .85em;">Proudly presented by <a href="http://www.entartete-kunst.com/">Pinky</a> and the  <a href="http://burnachurch.com/">Brain</a>. <!--They're Pinky and the Brain, Brain, Brain, Brain, Brain, Brain, Brain, Brain, NARF!-->Userfreundlich aufgeh&uuml;bscht von <a href="http://jeremy.lonien.de/">Jeremy</a>.<br />
-                Verteilt unter einer <a href="http://www.fsf.org/licensing/licenses/gpl.html"> GPL -fragt mich nicht nach Support oder Features, baut sie selbst ein (aber lasst mich von h&ouml;ren :o) ) - Lizenz </a>.</p>
+                <p style="margin-top: 30px; text-align: center; font-size: .85em;">Proudly presented by <a href="http://www.entartete-kunst.com/">Pinky</a> and the  <a href="http://burnachurch.com/">Brain</a>. <!--They're Pinky and the Brain, Brain, Brain, Brain, Brain, Brain, Brain, Brain, NARF!-->user-friendly adapted by <a href="http://jeremy.lonien.de/">Jeremy</a>.<br />
+                Distributed under the terms of the <a href="http://www.fsf.org/licensing/licenses/gpl.html"> GPL</a> Don't ask for support or features, do it on your own (but let me know!). License :o)</p>
 </div>
 <?php }  // End jabbernot_options_subpanel
 
 
-// ok, genug vom mausschubser- backend, lets go...
+// ok, genug vom mausschubser- backend, lets go... (end of frontend, backend starts here)
 function jabberbenachrichtigung($comment_id = 0)
 {
         global $wpdb;
