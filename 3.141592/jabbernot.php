@@ -82,7 +82,7 @@ GPL Lizenz FTW!
 ?>
 <div class="wrap">
         <h2><?php _e("Jabberbenachrichtigung: Optionen", 'jabbernotification')?></h2>
-        <p><?php _e("Bitte trage die gew&uuml;nschten Jabber-Account-Daten sowie die Jabber-ID, an welche die Benachrichtigung gesendet werden soll ein. Beachte, dass du zun&auml;chst den Account manuell registrieren musst.", 'jabbernotification')?> (<?php _e("Hilfe?", 'jabbernotification')?> =&gt; <a href="http://www.entartete-kunst.com/yet-another-jabber-faq/">Jabber- FAQ</a>!)</p>
+        <p><?php _e("Bitte trage die gew&uuml;nschten Jabber-Account-Daten sowie die Jabber-ID, an welche die Benachrichtigung gesendet werden soll ein. Beachte, dass du zun&auml;chst den Account manuell registrieren musst.", 'jabbernotification')?> (<?php _e("Hilfe?", 'jabbernotification')?> =&gt; <a href="http://www.entartete-kunst.com/yet-another-jabber-faq/">Jabber- FAQ (deutsch)</a>| <a href="http://archive.jabber.org/userguide/">Jabber- FAQ (english) !)</p>
         <form name="form1" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>?page=jabbernot.php&updated=true">
                 <input type="hidden" name="stage" value="process" />
                 <fieldset class="options">
