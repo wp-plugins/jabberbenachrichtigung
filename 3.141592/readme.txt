@@ -1,4 +1,4 @@
-=== Jabbernotifikation ===
+=== Jabbernotification ===
 Contributors: Missi
 Tags: comments, jabber, xmmp
 Requires at least: 2.0.2
