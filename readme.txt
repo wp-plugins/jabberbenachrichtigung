@@ -3,7 +3,7 @@ Contributors: Missi
 Tags: comments, jabber, xmpp
 Requires at least: 2.0.2
 Tested up to: 2.9
-Stable tag: 0.99-RC1
+Stable tag: 0.99-RC2
 Donate link: http://foo.entartete-kunst.com/
 Notify the Admin about new comments via jabber.
 
@@ -36,6 +36,10 @@ http://www.entartete-kunst.com/jabberbenachrichtigung-bei-neuen-kommentaren/
 
 
 == Changelog ==
+
+= 0.99-RC2 =
+
+* fixed a "header already sent"
 
 = 0.99-RC1 =
 

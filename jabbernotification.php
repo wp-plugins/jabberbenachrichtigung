@@ -4,7 +4,7 @@
 Plugin Name: Jabbernotification
 Plugin URI: http://www.entartete-kunst.com/jabberbenachrichtigung-bei-neuen-kommentaren/
 Description: A fully-configurable Wordpress plugin which informs the admin about new comments through Jabber. <a href="options-general.php?page=jabbernot.php">Settings</a>
-Version: 0.99-RC1
+Version: 0.99-RC2
 Author: Missi
 Author URI: http://www.entartete-kunst.com/
 
@@ -227,4 +227,3 @@ function jabbernotification($comment_id = 0)
 add_action('comment_post', 'jabbernotification');
 add_action('admin_menu', 'jabbernot_admin_menu');
 ?>
-
