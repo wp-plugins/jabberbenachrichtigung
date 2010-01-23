@@ -32,8 +32,7 @@ Ein Wordpressplugin, welches den Admin bei neuen Kommentaren per Jabber benachri
 
 == Screenshots ==
 
-http://www.entartete-kunst.com/jabberbenachrichtigung-bei-neuen-kommentaren/
-
+http://www.entartete-kunst.com/jabberbenachrichtigung-ueber-neue-kommentare-reload/
 
 == Changelog ==
 
